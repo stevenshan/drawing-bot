@@ -7,3 +7,11 @@ The first of this project takes a vector image and returns several sets of coord
 
 ### Part 2
 The second part sends instructions to the robot via Bluetooth.
+
+User_Interface.py - User interface for slicing vector image file into coordinate set
+
+![User Interface](https://github.com/shansteven/drawing-bot/blob/master/Screenshots/example2.png)
+
+Original | Sliced preview
+
+![Original](https://github.com/shansteven/drawing-bot/blob/master/Screenshots/original.png) | ![After](https://github.com/shansteven/drawing-bot/blob/master/Screenshots/example.png)

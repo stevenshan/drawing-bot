@@ -12,6 +12,15 @@ User_Interface.py - User interface for slicing vector image file into coordinate
 
 ![User Interface](https://github.com/shansteven/drawing-bot/blob/master/Screenshots/example2.png)
 
-Original | Sliced preview
+<table>
+  <tr>
+    <td>Original</td>
+    <td>Sliced Preview</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/shansteven/drawing-bot/blob/master/Screenshots/original.png"></td>
+    <td><img src="https://github.com/shansteven/drawing-bot/blob/master/Screenshots/example.png"></td>
+  </tr>
+</table>
 
-![Original](https://github.com/shansteven/drawing-bot/blob/master/Screenshots/original.png) | ![After](https://github.com/shansteven/drawing-bot/blob/master/Screenshots/example.png)
+Homer Simpson example from [http://thenewcode.com/assets/images/thumbnails/homer-simpson.svg](http://thenewcode.com/assets/images/thumbnails/homer-simpson.svg)

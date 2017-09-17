@@ -1,3 +1,5 @@
+# Sends instructions to robot via serial port
+
 import serial as serial_module
 from time import sleep
 

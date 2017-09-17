@@ -10,6 +10,8 @@ Source code for converting arc to bezier curves:
 	1.) https://github.com/fontello/svgpath
 """
 
+# Class that contains methods for converting vector shape into set of coordinates
+
 class analysis_methods():
 
 	def __init__ (self,parent,res = False,err = False,decimal = 5):

@@ -1,3 +1,5 @@
+# Converts num from original unit to millimeters
+
 def convert(num,unit):
 	unit_conversions = {
 		"em": 4.233333,

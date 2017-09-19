@@ -14,5 +14,8 @@ def convert(num, unit):
         "m": 1000,
         "ft": 304.8,
         "yd": 914.4,
+		"meters": 1000,
+		"inches": 25.4,
+		"centimeters": 10
     }
     return unit_conversions[unit] * num

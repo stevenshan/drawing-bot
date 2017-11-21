@@ -127,15 +127,20 @@ class Slicer():
                             fl.write("P 0\n")
                             pen_position = 0
                         if float(coordinate[0] - current_position[0]) == 0:
-                            deg = math.pi / 2
+                            #deg = math.pi / 2
+			    deg = 0
+			    if (coordinate[1] < current_position[1]):
+				deg = math.pi
                         else:
                             slope = float(
                                 coordinate[1] - current_position[1]) / float(coordinate[0] - current_position[0])
-                            deg = math.atan(slope)
+                            deg = math.pi/2 - abs(math.atan(slope))
+			    if (slope <= 0 and coordinate[0] < current_position[0]):
+				deg = -deg
                     if deg is not False:
                         temp = direction
                         direction = deg
-                        deg -= temp
+                        deg -= temp	
                         fl.write("M " +
                                  (str("%." +
                                       str(self.FLOAT_DECIMAL_PNTS) +
@@ -147,6 +152,7 @@ class Slicer():
                                       "f") %
                                      dist) +
                                  "\n")
+			#print([int(x) for x in current_position], " to ", [int(x) for x in coordinate])
                         current_position = coordinate
                     if pen_position == 0:
                         fl.write("P 1\n")

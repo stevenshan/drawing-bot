@@ -141,6 +141,8 @@ class Slicer():
                         temp = direction
                         direction = deg
                         deg -= temp	
+			if abs(deg) > math.pi:
+			    deg %= math.pi 
                         fl.write("M " +
                                  (str("%." +
                                       str(self.FLOAT_DECIMAL_PNTS) +

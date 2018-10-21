@@ -11,7 +11,7 @@ import Unit_Converter
 
 
 class Slicer():
-
+    #Lots of constants decleration
     VALID_TAGS = [
         "svg",
         "circle",
